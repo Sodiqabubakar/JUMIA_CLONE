@@ -14,7 +14,7 @@
     
     <header class="navbar">
   <div class="container nav-inner">
-    <div class="hamburger">☰</div>
+    <div class="hamburger" id="hamburger">☰</div>
     <div class="logo">jumia</div>
 
     <div class="search-bar">
@@ -34,7 +34,7 @@
     <section class="section">
     <div class="container main-section">
        <!-- side section -->
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
         <ul>
           <li>Appliances</li>
           <li>Phones & Tablets</li>
@@ -52,7 +52,7 @@
       <div class="hero slideshow">
         <img src="../images/Artboard.jpg" alt="" class="slide">
         <img src="../images/Desktop_Homepage_Slider__712x384.jpg" alt="" class="slide">
-        <img src="../images/Homepage_slider_712x384.gif" alt="">
+        <img src="../images/Homepage_slider_712x384.gif" alt="" class="slide">
         <img src="../images/JumiaNGValentinesGenericBanner712x384.jpg" alt="" class="slide">
       </div>
       <div class="r-side">
@@ -294,6 +294,14 @@
                  setTimeout(showSlides, 3000);
             }
             showSlides()
+    
+            const hamburger = document.getElementById("hamburger");
+             const sidebar = document.getElementById("sidebar");
+              
+             hamburger.addEventListener("click", ()=> {
+                sidebar.classList.toggle("active");
+             });
+    
     })
 </script>
 </body>
