@@ -453,6 +453,7 @@ form a:hover {
 @media (max-width: 768px) {
     .foot-top {
         flex-direction: column;
+        align-items: center;
     }
 
     form input[type="text"] {
@@ -464,6 +465,9 @@ form a:hover {
     form button {
         width: 100%;
         border-radius: 4px;
+    }
+    .sales {
+        overflow: auto;
     }
 }
 
@@ -521,15 +525,10 @@ form a:hover {
 /* Responsive */
 @media (max-width: 992px) {
     .help {
-        grid-template-columns: repeat(2, 1fr);
+        display: none;
     }
 }
 
-@media (max-width: 600px) {
-    .help {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* Bottom Footer Section */
 .footer-bottom {
@@ -626,7 +625,7 @@ form a:hover {
   gap: 20px;
 }
 
-//* PRODUCT GALLERY */
+/* PRODUCT GALLERY */
 .product-gallery {
   background: #fff;
   padding: 20px;
@@ -770,5 +769,8 @@ select {
 
   .thumbnail-list {
     flex-direction: row;
+  }
+  .price {
+    font-size: 16px;
   }
 }
